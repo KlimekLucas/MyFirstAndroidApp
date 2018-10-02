@@ -3,6 +3,7 @@ package com.example.rottan.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,6 +31,7 @@ public class ContactAddActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_add);
+        Log.d("ContactAddActivity", "Creating ContactAddActivity");
 
         btnBack = findViewById(R.id.btnBaack);
 
@@ -49,7 +51,7 @@ public class ContactAddActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-
+                Log.d("ContactAddActivity", "HAPPy was pressed");
                 if (etName.getText().toString().isEmpty() ||
                         etWebsite.getText().toString().isEmpty() ||
                         etAdress.getText().toString().isEmpty() ||
@@ -68,7 +70,7 @@ public class ContactAddActivity extends AppCompatActivity {
                     intent.putExtra("adres", adres);
                     intent.putExtra("number", number);
                     intent.putExtra("emotion", emotion);
-
+                    Log.d("ContactAddActivity", "sending reslts for Happy");
                     setResult(RESULT_OK, intent);
                     ContactAddActivity.this.finish();
                 }
@@ -81,7 +83,7 @@ public class ContactAddActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-
+                Log.d("ContactAddActivity", "neutral was pressed");
                 if (etName.getText().toString().isEmpty() ||
                         etWebsite.getText().toString().isEmpty() ||
                         etAdress.getText().toString().isEmpty() ||
@@ -100,7 +102,7 @@ public class ContactAddActivity extends AppCompatActivity {
                     intent.putExtra("adres", adres);
                     intent.putExtra("number", number);
                     intent.putExtra("emotion", emotion);
-
+                    Log.d("ContactAddActivity", "sending results for nutral");
                     setResult(RESULT_OK, intent);
                     ContactAddActivity.this.finish();
                 }
@@ -112,7 +114,7 @@ public class ContactAddActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-
+                Log.d("ContactAddActivity", "Sad was pressed");
                 if (etName.getText().toString().isEmpty() ||
                         etWebsite.getText().toString().isEmpty() ||
                         etAdress.getText().toString().isEmpty() ||
@@ -131,7 +133,7 @@ public class ContactAddActivity extends AppCompatActivity {
                     intent.putExtra("adres", adres);
                     intent.putExtra("number", number);
                     intent.putExtra("emotion", emotion);
-
+                    Log.d("ContactAddActivity", "sending results for sad");
                     setResult(RESULT_OK, intent);
                     ContactAddActivity.this.finish();
                 }
@@ -141,12 +143,13 @@ public class ContactAddActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("ContactAddActivity", "finishing Activity");
                 setResult(RESULT_CANCELED);
                 ContactAddActivity.this.finish();
 
+
             }
         });
-
 
 
     }

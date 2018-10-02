@@ -14,4 +14,7 @@
     <string name="todo">TODO</string>
     <string name="obrazek">obrazek</string>
     <string name="create_new_user">Create new User</string>
+    <string name="mainActivityString">Main activity</string>
+    <string name="close">Close</string>
+    <string name="back">Back</string>
 </resources>

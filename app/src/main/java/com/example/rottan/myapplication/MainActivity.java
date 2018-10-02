@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+        Log.d("Main Activity", "reciving Data");
 
         if (requestCode == ContactAddActivity) {
             if (resultCode == RESULT_OK) {
@@ -57,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d(getString(R.string.mainActivityString), "Application Start");
 
         tvContactsApp = findViewById(R.id.tvContactsApp);
         btnCreateNewContact = findViewById(R.id.btnCreateNewContact);
@@ -75,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,
                         com.example.rottan.myapplication.ContactAddActivity.class);
 
+                Log.d("Main Activity", "Start ContactAddActivity");
                 startActivityForResult(intent, ContactAddActivity);
             }
 
@@ -115,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 System.exit(0);
+                Log.d("Main activity", "ApplicationClose");
             }
         });
 
