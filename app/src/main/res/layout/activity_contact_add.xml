@@ -65,7 +65,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageView
@@ -79,9 +79,8 @@
             android:layout_weight="1"
             android:clickable="true"
             android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/ic_mood_black_24dp"
             android:focusable="true"
-            />
+            app:srcCompat="@drawable/ic_mood_black_24dp" />
 
         <ImageView
             android:id="@+id/ivNormal"
@@ -93,8 +92,8 @@
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:clickable="true"
-            app:srcCompat="@drawable/ic_sentiment_neutral_black_24dp"
-            android:focusable="true" />
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_sentiment_neutral_black_24dp" />
 
         <ImageView
             android:id="@+id/ivSad"
@@ -106,7 +105,25 @@
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:clickable="true"
-            app:srcCompat="@drawable/ic_mood_bad_black_24dp"
-            android:focusable="true" />
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_mood_bad_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBaack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:text="Back" />
     </LinearLayout>
 </LinearLayout>

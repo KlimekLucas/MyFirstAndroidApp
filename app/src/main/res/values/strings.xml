@@ -13,4 +13,5 @@
     <string name="enter_phone_number">enter phone number\'</string>
     <string name="todo">TODO</string>
     <string name="obrazek">obrazek</string>
+    <string name="create_new_user">Create new User</string>
 </resources>
