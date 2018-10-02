@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="createNewContact">Create New contact</string>
+    <string name="ContactsApp">ContactsApp</string>
+    <string name="button">Button</string>
+    <string name="please_enter_your_name">please Enter your name</string>
+    <string name="please_enter_your_phone_number">Please enter your phone number</string>
+    <string name="please_enter_your_website">please enter your website</string>
+    <string name="please_enter_your_adress">please enter your adress</string>
+    <string name="enter_name">enter name</string>
+    <string name="enter_website">enter website</string>
+    <string name="enter_adres">enter adres</string>
+    <string name="enter_phone_number">enter phone number\'</string>
+    <string name="todo">TODO</string>
+    <string name="obrazek">obrazek</string>
+</resources>
