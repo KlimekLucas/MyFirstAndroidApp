@@ -40,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
                 tvAdres.setVisibility(View.VISIBLE);
                 ivMood.setVisibility(View.VISIBLE);
 
-                switch (data.getStringExtra("emotion")) {
-                    case "happy":
+                switch (data.getIntExtra("emotion",0)) {
+                    case 1:
                         ivMood.setImageResource(R.drawable.ic_mood_black_24dp);
                         break;
-                    case "neutral":
+                    case 2:
                         ivMood.setImageResource(R.drawable.ic_sentiment_neutral_black_24dp);
                         break;
                     default:

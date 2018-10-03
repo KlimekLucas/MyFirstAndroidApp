@@ -59,7 +59,7 @@ public class ContactAddActivity extends AppCompatActivity {
 
                     Toast.makeText(ContactAddActivity.this, "please enter All fields", Toast.LENGTH_SHORT).show();
                 } else {
-                    String emotion = "happy";
+                    Integer emotion = 1;
                     String name = etName.getText().toString().trim();
                     String website = etWebsite.getText().toString().trim();
                     String adres = etAdress.getText().toString().trim();
@@ -91,7 +91,7 @@ public class ContactAddActivity extends AppCompatActivity {
 
                     Toast.makeText(ContactAddActivity.this, "please enter All fields", Toast.LENGTH_SHORT).show();
                 } else {
-                    String emotion = "neutral";
+                    Integer emotion = 2;
                     String name = etName.getText().toString().trim();
                     String website = etWebsite.getText().toString().trim();
                     String adres = etAdress.getText().toString().trim();
@@ -122,7 +122,7 @@ public class ContactAddActivity extends AppCompatActivity {
 
                     Toast.makeText(ContactAddActivity.this, "please enter All fields", Toast.LENGTH_SHORT).show();
                 } else {
-                    String emotion = "sad";
+                    Integer emotion = 3;
                     String name = etName.getText().toString().trim();
                     String website = etWebsite.getText().toString().trim();
                     String adres = etAdress.getText().toString().trim();
